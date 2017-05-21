@@ -1,0 +1,15 @@
+﻿float iGlobalTime = 0;
+float4 iResolution = float4(256, 256, 0, 0);
+
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+RWTexture2D<float4> Result;
+
+[numthreads(8, 8, 1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	Result[id.xy] = float4(id.x/ iResolution.x, id.y/ iResolution.y, sin(iGlobalTime), 1.0);
+}
