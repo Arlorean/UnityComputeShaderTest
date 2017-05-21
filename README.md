@@ -1,6 +1,6 @@
 # Unity Compute Shader Realtime Ray Tracing
 
-This is a Unity/HLSL port of the excellent [Annotated Realtime Raytracing](https://www.tinycranes.com/blog/2015/05/annotated-realtime-raytracing/) blog post by [Kevin Fung](https://www.tinycranes.com/).
+This is a Unity/HLSL port of the excellent [Annotated Realtime Raytracing](https://www.tinycranes.com/blog/2015/05/annotated-realtime-raytracing/) blog post by [Kevin Fung](https://github.com/Polytonic/).
 
 The original GLSL shader runs live in a web browser on [ShaderToy](https://www.shadertoy.com/view/4ljGRd). Unity looks the same but at 138fps (Intel HD GPU).
 
